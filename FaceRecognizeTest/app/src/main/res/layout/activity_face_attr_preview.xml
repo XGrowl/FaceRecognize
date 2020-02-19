@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceAttrPreviewActivity">
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/texture_preview"/>
+    <widget.FaceRectView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/face_rect_view"/>
+    <com.ddz.floatingactionbutton.FloatingActionMenu
+        android:id="@+id/fab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:fab_labelStyle="@drawable/bg">
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:fab_colorNormal="#FFFFFF"
+            app:fab_icon="@drawable/change"
+            />
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:id="@+id/face_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFFFFF"
+            app:fab_icon="@drawable/singnup"
+            app:fab_title="注册人脸" />
+    </com.ddz.floatingactionbutton.FloatingActionMenu>
+</FrameLayout>
